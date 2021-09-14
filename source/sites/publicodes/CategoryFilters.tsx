@@ -7,10 +7,21 @@ export default ({ categories, selected, countByCategory }) => {
 				flex-wrap: wrap;
 				list-style-type: none;
 				justify-content: center;
+				padding-left: 0;
+				@media (max-width: 800px) {
+					flex-wrap: nowrap;
+					overflow-x: auto;
+					white-space: nowrap;
+					justify-content: normal;
+					height: 3rem;
+					scrollbar-width: none;
+				}
 				li {
 					padding: 0.1rem 0rem;
 					margin: 0.15rem 0.2rem;
 					border-radius: 0.2rem;
+					line-height: 1.6rem;
+					height: 1.8rem;
 				}
 				li button {
 					color: white;
@@ -20,10 +31,12 @@ export default ({ categories, selected, countByCategory }) => {
 		>
 			{categories.map((category) => (
 				<li
+					key={category.dottedName}
 					css={`
 						background: ${category.color};
+						${selected && 'background: #aaa;'}
 						${selected === category.dottedName
-							? 'border: 3px solid var(--color)'
+							? `background: ${category.color}`
 							: ''}
 						${!countByCategory[category.dottedName] ? 'background: #ccc' : ''}
 					`}

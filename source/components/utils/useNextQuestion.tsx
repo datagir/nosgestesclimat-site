@@ -59,6 +59,8 @@ export function getNextSteps(
 			)
 		)
 
+	console.log('MTAV', missingByTotalScore)
+
 	const missingByCompound = mergeWith(
 			pair,
 			missingByTargetsAdvanced,

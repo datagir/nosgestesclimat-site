@@ -20,8 +20,6 @@ import Meta from '../../components/utils/Meta'
 
 const { decodeRuleName, encodeRuleName } = utils
 
-export const Footprint = ({ value }) => <div>Lala {value}</div>
-
 export default ({}) => {
 	const { encodedName } = useParams()
 	const rules = useSelector((state) => state.rules)
@@ -50,7 +48,6 @@ export default ({}) => {
 		{ nodeValue, title } = evaluation
 
 	const { description, icônes: icons, plus } = rules[dottedName]
-	console.log('EVAL', plus)
 
 	const flatActions = rules['actions']
 	const relatedActions = flatActions.formule.somme
