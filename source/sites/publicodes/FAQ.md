@@ -6,6 +6,12 @@ Bonne lecture !
 
 ## GENERAL
 
+<h3> Qu'est-ce que l'empreinte carbone ? Comment se fait-il que ce que je mange ou que ma poubelle émettent des Gaz à Effet de Serre ?</h3>
+En effet, tous ce que nous consommons, utilisons, jetons a nécessité de la matière (qui a du être extraite), de l'énergie pour être assemblé, mis en forme ou bien encore conditionné. Il est également nécessaire que ces biens soient transportés, stockés et quand ils arrivent en fin de vie tous ne s'arrête pas. Nos déchets doivent encore être collectés puis traités. 
+C'est pourquoi, même si cela peut sembler contre intuitif tous nos gestes quotidiens participent à émettre des gaz à de serre. Certains énormément d'autres très peu. Manger un kg de patate émet des gaz à effet de serre, rouler 10 000 km en voiture aussi, mais bien évidemment dans des proportions très différentes. 
+Pour savoir combien émettent chacunes de nos actions, nous nous en remettons à [Base Carbone](https://www.bilans-ges.ademe.fr/fr/accueil) qui pour différentes données (km roulé, kg de viande, kWh consommé, une TV, etc.) permettent d'estimer la quantité de gaz à effet de serre émise.
+Le but de nos Nos Gestes Climat est donc de questionner votre mode de vie afin d'identifier ce qui contribue plus ou moins à votre empreinte carbone. 
+
 <h3>Le calculateur est il destiné uniquement aux Français ?</h3>
 
 Pour l'instant oui. Certains paramètres du modèle, en particulier l'empreinte du mix électrique (en gCO2e/kWh) influence particulièrement le résultat final, qui ne sera donc pas valide en Belgique, au Congo, au Québec, en Algérie ou ailleurs.
@@ -29,6 +35,17 @@ L’équipe de NGC travaille à développer une approche « foyer » du calculat
 <h3 id="finance">Pourquoi ne pas prendre en compte l'épargne individuelle ?</h3>
 
 Les émissions des énergies fossiles financées par les banques sont comptabilisées pour ceux qui les utilisent. De façon illustrée, votre banque finance peut-être l'extraction du pétrole au large de la Sibérie, mais ce pétrole est extrait pour un usage précis : faire 10km de voiture, chauffer une maison ou produire du plastique. Ce sont les consommations voiture, logement et plastique qui dans le modèle se voient attribuer ces émissions. Il nous serait très difficile au vu des données actuelles d'inclure une part de responsabilité de l'empreinte des fortunes personnelles dans le modèle, sans faire un double comptage.
+
+<h3 id="2tonnes">Deux tonnes, c'est trop dur, j'y arrive pas !</h3>
+
+Cette réaction est normale ! Et soyons honnête, à l'heure actuelle, quasiment personne ne peut émettre seulement 2 tonnes. Sachez également que si votre empreinte se situe autour de 4 ou 5 tonnes vous avez déjà fait une grande partie du chemin. Attendre 2 tonnes à l'échelle individuelle est, en réalité, avant tout un objectif collectif. Il s'agit, en effet, de progresser, individuellement, vers des modes de vies moins émetteurs de gaz à effet de serre mais il est essentiel que des changements s'opèrent à plus large échelle pour faciliter l'émergence de ces mode de vies. Ainsi, une collectivité où les citoyens se mettent massivement au vélo (ou à un autre mode bas carbone) poussera ses élus à favoriser de nouvelles infrastructures et politiques adéquates, ce qui en retour aidera les prochains à se mettre au vélo, et ainsi de suite ♻️. On peut aussi envisager que les changements de consommation luttant contre l'obsolescence programmée soit un signal fort pour que les pouvoirs publics l'interdisent et favorisent les entreprises dont les produits ont un faible impact sur l'environnement.
+
+Il faut aussi garder en tête que cet objectif de 2 tonnes doit être atteint en 2050. Il s'agit donc d'une transition progressive à mener ou chaque action que vous mettez en oeuvre vous aidera à atteindre cet objectif. Nos Gestes Climat vous propose d'ailleurs de nombreuses actions adaptées à vos réponses afin de vous engager progressivement dans cette transition.
+
+Cet objectif de 2 tonnes est donc dur mais c'est l'objectif que nous devons atteindre afin de contenir le réchauffement climatique à +2°. Cet objectif 2° et l'objectif 2 tonnes associé (qui traduisent la volonté française d'atteindre la neutralité carbone à l'horizon 2050) ne relève pas du fait politique mais découlent des limites planétaires identifiées par la science du climat. Ces limites traduisent la quantité maximale de gaz à effet de serre que peu émettre l'humanité avant d'être certain de dépasser les 2° de réchauffement. Ces objectifs sont donc factuels et non négociables pour limiter le réchauffement et les conséquences désastreuses qui vont avec. Pour comprendre ce qui nous attend c'est [ici](https://datagir.ademe.fr/blog/budget-empreinte-carbone-c-est-quoi/)
+
+Notons aussi que l'exercice de bilan carbone peut provoquer un découragement car l'objectif est de compter vos émissions de gaz à effet de serre. Aucune mention n'est faite des comportements qui évitent ces émissions et limitent votre impact sur le climat (ce n'est pas le principe de la comptabilité carbone). Si vous souhaitez aprréhender ce que peut être une vie bas carbone n'hésitez pas à vous tourner vers l'association Résistance Climatique et leurs ateliers [Inventons nos vies bas carbone](https://www.resistanceclimatique.org/inventons_nos_vies_bas_carbone). Marcher dans la nature, jouer de la musique, faire du vélo, naviguer à la voile, passer du temps avec ses proches, faire la fête, lire, discuter, faire son potager... Une vie bas carbone, c'est d'autant plus d'expériences joyeuses, qui ne retrouvent pas forcément dans un bilan carbone individuel, mais qui seront au coeur des modes de vie que nous inventons en ce moment même.
+
 
 ## SERVICES PUBLICS
 
