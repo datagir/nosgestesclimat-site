@@ -21,6 +21,7 @@ import { useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import AnimatedLoader from './AnimatedLoader'
+import rules from '@incubateur-ademe/nosgestesclimat'
 
 export default ({ children }) => {
 	return <EngineWrapper>{children}</EngineWrapper>
@@ -40,7 +41,6 @@ const EngineWrapper = ({ children }) => {
 	const parsedOption = engineState?.options?.parsed
 
 	const { i18n } = useTranslation()
-	const currLangAbrv = getCurrentLangAbrv(i18n)
 
 	useEffect(() => {
 		let active = true
@@ -49,28 +49,7 @@ const EngineWrapper = ({ children }) => {
 			if (!branchData.loaded) return
 			if (!engineRequestedOnce) return
 
-			const fileName = `/co2-model.${currentRegionCode}-lang.${currLangAbrv}${
-				optimizedOption ? '-opti' : ''
-			}.json`
-
-			const url =
-				currLangAbrv &&
-				currentRegionCode &&
-				`https://nosgestesclimat-api.osc-fr1.scalingo.io/1.0.5/${currLangAbrv}/${currentRegionCode}/${
-					optimizedOption ? 'optim-rules' : 'rules'
-				}`
-			console.log('fetching:', url)
-			fetch(url, { mode: 'cors' })
-				.then((response) => response.json())
-				.then((json) => {
-					if (active) {
-						dispatch({ type: 'SET_RULES', rules: json })
-					}
-				})
-				.catch((err) => {
-					console.log('url:', url)
-					console.log('err:', err)
-				})
+			return Promise.resolve(rules)
 		}
 		fetchAndSetRules()
 		return () => {
@@ -82,6 +61,7 @@ const EngineWrapper = ({ children }) => {
 		branchData.loaded,
 		i18n.language,
 		currentRegionCode,
+		rules,
 		optimizedOption,
 		engineRequestedOnce,
 	])
