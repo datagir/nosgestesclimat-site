@@ -6,7 +6,6 @@ import {
 	EngineProvider,
 	SituationProvider,
 } from '@/components/utils/EngineContext'
-import { getCurrentLangAbrv } from '@/locales/translation'
 import {
 	AppState,
 	defaultRulesOptions,
@@ -21,7 +20,7 @@ import { useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useDispatch, useSelector } from 'react-redux'
 import AnimatedLoader from './AnimatedLoader'
-import rules from '@incubateur-ademe/nosgestesclimat'
+import rulesJson from '@incubateur-ademe/nosgestesclimat/nosgestesclimat.model.json'
 
 export default ({ children }) => {
 	return <EngineWrapper>{children}</EngineWrapper>
@@ -48,8 +47,7 @@ const EngineWrapper = ({ children }) => {
 		const fetchAndSetRules = () => {
 			if (!branchData.loaded) return
 			if (!engineRequestedOnce) return
-
-			return Promise.resolve(rules)
+			dispatch({ type: 'SET_RULES', rules:rulesJson })
 		}
 		fetchAndSetRules()
 		return () => {
