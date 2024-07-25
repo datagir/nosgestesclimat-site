@@ -29,7 +29,7 @@ export const rehydrateDetails = (encodedDetails) =>
 		// Here we convert categories with an old name to the new one
 		// 'biens divers' was renamed to 'divers'
 		.map(([category, ...rest]) =>
-			category === 'b' ? ['d', ...rest] : [category, ...rest]
+			category === 'b' ? ['d', ...rest] : [category, ...rest],
 		)
 
 export const sumFromDetails = (details) =>
@@ -148,11 +148,6 @@ export default ({}) => {
 		</div>
 	)
 }
-
-export const generateImageLink = (location) =>
-	`https://ogimager.osc-fr1.scalingo.io/capture/${encodeURIComponent(
-		location
-	)}/shareImage?timeout=5000`
 
 export const DocumentationEndButton = ({ ruleName, color }) => (
 	<div

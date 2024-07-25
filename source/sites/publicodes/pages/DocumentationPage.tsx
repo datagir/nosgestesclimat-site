@@ -31,14 +31,6 @@ export default ({ engine: givenEngine }) => {
 					Text: ({ children }) => (
 						<>
 							{/* This isn't clean, created as many Helmets as there are text nodes. Should be integrated in publicodes as an option */}
-							<Helmet>
-								<meta
-									property="og:image"
-									content={`https://ogimager.osc-fr1.scalingo.io/capture/${encodeURIComponent(
-										window.location.href
-									)}/${encodeURIComponent('documentation-rule-root header')}`}
-								/>
-							</Helmet>
 							<Markdown noRouter={false}>{children}</Markdown>
 							{children.includes('<RavijenChart/>') && (
 								<GraphContainer>

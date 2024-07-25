@@ -9,7 +9,6 @@ import {
 import { RuleListItem } from '@/components/SearchBar'
 import Meta from '@/components/utils/Meta'
 import References from '@/sites/publicodes/DocumentationReferences'
-import { generateImageLink } from '@/sites/publicodes/fin'
 import { capitalise0, omit } from '@/utils'
 import { Markdown } from 'Components/utils/markdown'
 import { utils } from 'publicodes'
@@ -103,7 +102,7 @@ export default ({
 			// specific to NGC form generation, could be cool to visualize, but in a <details> tag, since it's big
 			'mosaique',
 		],
-		rule
+		rule,
 	)
 
 	return (
@@ -114,11 +113,7 @@ export default ({
 			`}
 		>
 			<DocumentationStyle>
-				<Meta
-					description={rule.description}
-					title={title}
-					image={generateImageLink(window.location)}
-				/>
+				<Meta description={rule.description} title={title} />
 				<header id="shareImage">
 					<Breadcrumb dottedName={dottedName} rules={rules} />
 					<Title title={`${rule.icônes ?? ''} ${title}`} />
@@ -193,7 +188,7 @@ const GithubContributionLink = ({ dottedName }) => (
 	>
 		<a
 			href={`https://github.com/search?q=${encodeURIComponent(
-				`repo:datagir/nosgestesclimat "${dottedName}:"`
+				`repo:datagir/nosgestesclimat "${dottedName}:"`,
 			)} path:data&type=code`}
 		>
 			<button className="ui__ button small link-button">✏️ Contribuer</button>
@@ -203,7 +198,7 @@ const GithubContributionLink = ({ dottedName }) => (
 
 const NamespaceRules = ({ rules, dottedName }) => {
 	const namespaceRules = Object.keys(rules).filter(
-		(key) => key.includes(dottedName) && key !== dottedName
+		(key) => key.includes(dottedName) && key !== dottedName,
 	)
 	if (!namespaceRules.length) return null
 	return (

@@ -6,7 +6,6 @@ import { useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useSelector } from 'react-redux'
 import tinygradient from 'tinygradient'
-import { generateImageLink } from '.'
 import { ActionButton, IntegratorActionButton } from './Buttons'
 import ClimateTargetChart from './ClimateTargetChart'
 import FinShareButton from './FinShareButton'
@@ -61,14 +60,13 @@ export default ({
 		roundedValue = (value / 1000).toLocaleString('fr-FR', {
 			maximumSignificantDigits: 2,
 			minimumSignificantDigits: 2,
-		}),
-		shareImage = generateImageLink(window.location)
+		})
 
 	const { integratorYoutubeVideo, integratorActionText, integratorActionUrl } =
 		useContext(IframeOptionsContext)
 
 	const hasSubscribedToNewsletter = useSelector(
-		hasSubscribedToNewsletterSelector
+		hasSubscribedToNewsletterSelector,
 	)
 
 	return (
@@ -82,7 +80,6 @@ export default ({
 				description={t('meta.publicodes.fin.Budget.description', {
 					roundedValue,
 				})}
-				image={shareImage}
 				url={window.location}
 			/>
 			<motion.div
@@ -180,7 +177,7 @@ export default ({
 							label={t(
 								hasSubscribedToNewsletter
 									? 'Partager mes résultats'
-									: 'Partager'
+									: 'Partager',
 							)}
 							textColor={textColor}
 						/>

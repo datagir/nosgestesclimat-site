@@ -2,7 +2,6 @@ import Meta from 'Components/utils/Meta'
 import { motion, useSpring } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Trans, useTranslation } from 'react-i18next'
-import { generateImageLink } from '.'
 import {
 	getLangFromAbreviation,
 	getLangInfos,
@@ -39,8 +38,7 @@ export default ({ score, headlessMode }) => {
 		roundedValue = (value / 1000).toLocaleString(currentLangInfos.abrvLocale, {
 			maximumSignificantDigits: 2,
 			minimumSignificantDigits: 2,
-		}),
-		shareImage = generateImageLink(window.location)
+		})
 
 	return (
 		<div>
@@ -49,7 +47,6 @@ export default ({ score, headlessMode }) => {
 				description={t('meta.publicodes.fin.actionslide.description', {
 					roundedValue: roundedValue,
 				})}
-				image={shareImage}
 				url={window.location}
 			/>
 			<motion.div

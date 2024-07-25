@@ -8,13 +8,12 @@ import { Link } from 'react-router-dom'
 import { correctValue } from '../../../components/publicodesUtils'
 import NeutralH1 from '../../../components/ui/NeutralH1'
 import { ActionButton } from './Buttons'
-import { DocumentationEndButton, generateImageLink } from './index'
+import { DocumentationEndButton } from './index'
 
 const petrolRuleName = 'pétrole . pétrole brut'
 
 export default ({ headlessMode }) => {
 	const { t } = useTranslation()
-	const shareImage = generateImageLink(window.location)
 	//
 	//	Configuration is try and test, feeling, really
 	const valueSpring = useSpring(0, {
@@ -52,7 +51,6 @@ export default ({ headlessMode }) => {
 				description={t('meta.publicodes.fin.Petrogaz.description', {
 					empreinte: primaryValue,
 				})}
-				image={shareImage}
 				url={window.location}
 			/>
 			<motion.div

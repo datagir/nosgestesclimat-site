@@ -2,7 +2,7 @@ import Meta from 'Components/utils/Meta'
 import { motion, useSpring } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { Trans } from 'react-i18next'
-import { DocumentationEndButton, generateImageLink } from '.'
+import { DocumentationEndButton } from '.'
 import GridChart from '../chart/GridChart'
 import FinShareButton from './FinShareButton'
 
@@ -32,15 +32,13 @@ export default ({ score, details, headlessMode, noQuestionsLeft }) => {
 		roundedValue = (value / 1000).toLocaleString('fr-FR', {
 			maximumSignificantDigits: 2,
 			minimumSignificantDigits: 2,
-		}),
-		shareImage = generateImageLink(window.location)
+		})
 
 	return (
 		<div>
 			<Meta
 				title="Mon empreinte climat"
 				description={`Mon empreinte climat est de ${roundedValue} tonnes de CO₂ₑ. Mesure la tienne !`}
-				image={shareImage}
 				url={window.location}
 			/>
 			<motion.div

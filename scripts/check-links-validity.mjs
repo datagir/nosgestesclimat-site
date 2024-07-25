@@ -12,12 +12,11 @@ const whiteList = [
 	'https://api.github.com/repos/',
 	'https://deploy-preview-',
 	'https://xxx.png/jpg',
-	'https://ogimager.osc-fr1.scalingo.io/capture/',
 ]
 
 // Extrait la liste des liens référencés dans la base de code
 const { stdout, stderr } = await promisify(exec)(
-	"rg -oNI -e 'https?://([\\w/_\\-?=%+@]|\\.\\w)+' -g '*.{yaml,ts,tsx,js,jsx}' -g '!*-en.yaml' ./ | sort | uniq"
+	"rg -oNI -e 'https?://([\\w/_\\-?=%+@]|\\.\\w)+' -g '*.{yaml,ts,tsx,js,jsx}' -g '!*-en.yaml' ./ | sort | uniq",
 )
 if (stderr) {
 	throw new Error(stderr)
@@ -82,7 +81,7 @@ function sleep(ms) {
 }
 
 await Promise.allSettled(
-	Array.from({ length: simultaneousItems }).map(processNextQueueItem)
+	Array.from({ length: simultaneousItems }).map(processNextQueueItem),
 )
 
 console.log('Terminé')
@@ -112,7 +111,7 @@ if (detectedErrors.length > 0) {
 			'Liens invalides :' +
 				detectedErrors
 					.map(({ status, link }) => `\n- [${status}] ${link}`)
-					.join('')
+					.join(''),
 		)
 	}
 }

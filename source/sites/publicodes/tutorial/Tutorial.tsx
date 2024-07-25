@@ -8,7 +8,6 @@ import { useMatomo } from '@/contexts/MatomoContext'
 import useKeypress from '@/hooks/useKeyPress'
 import { AppState } from '@/reducers/rootReducer'
 import { enquêteSelector } from '@/sites/publicodes/enquête/enquêteSelector'
-import { generateImageLink } from '@/sites/publicodes/fin'
 import HorizontalSwipe from '@/sites/publicodes/HorizontalSwipe'
 import Categories from '@/sites/publicodes/tutorial/Categories'
 import ClimateWarming from '@/sites/publicodes/tutorial/ClimateWarming'
@@ -39,7 +38,7 @@ export default () => {
 
 	const skip = useCallback(
 		(name: string, unskip = false) => dispatch(skipTutorial(name, unskip)),
-		[dispatch]
+		[dispatch],
 	)
 
 	const last = index === slides.length - 1
@@ -76,11 +75,7 @@ export default () => {
 
 	return (
 		<>
-			<Meta
-				title={title}
-				description={description}
-				image={generateImageLink(window.location)}
-			/>
+			<Meta title={title} description={description} />
 			<AutoCanonicalTag />
 			<SlidesLayout length={slides.length} active={index}>
 				<HorizontalSwipe {...{ next, previous }}>
