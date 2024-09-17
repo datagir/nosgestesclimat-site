@@ -1,67 +1,70 @@
-# Diffuser Nos Gestes Climat
+## Diffuser Nos Gestes Climat
 
-Nos Gestes Climat est un service public, son code [est libre](/documentation) et réutilisable par tout le monde.
+Nos Gestes Climat est un service public, son code [est libre](https://nosgestesclimat.fr/documentation) et réutilisable par tout le monde.
 
-Cependant, vous pouvez profiter et diffuser notre simulateur de plusieurs façons sans mobiliser des compétences de développement.
+Par ailleurs, nous vous invitons vivement à diffuser notre simulateur d’empreinte carbone autour de vous, de plusieurs façons - et sans mobiliser des compétences de développement !
 
-## Vous souhaitez partager une page dans une langue spécifique
+Découvrez notre \***\*kit de diffusion\*\*** ambassadeurs et ci-dessous toutes les options qui s’offrent à vous.
 
-Depuis la version [Glacier du Géant](https://nosgestesclimat.fr/nouveautés/glacier-du-géant), l'interface du
-site Nos Gestes Climat est traduite dans plusieurs langues. Vous pouvez donc
-partager une page du site dans une langue spécifique en précisant à la fin de
-l'URL `?lang=en`.
+N’hésitez pas à nous prévenir sur l’adresse contact@nosgestesclimat.fr de cette diffusion afin que nous puissions vous ajouter à notre **Galerie des réutilisateurs**.
 
-Par exemple, pour partager la page  _/diffuser_ en anglais :
+### Vous voulez intégrer le simulateur directement sur votre site ?
 
-`https://nosgestesclimat.fr/diffuser?lang=en`
-
-Les langues supportées actuellement sont le français (`fr`) et l'anglais (`en`).
-
-> Notez que lorsque vous changez la langue de l'interface, le modèle reste
-> inchangé. C'est simplement le texte du site qui est traduit et non le modèle
-> en lui-même.
-
-## Vous voulez intégrer le simulateur directement sur votre site
-
-Rien de plus simple ! Intégrez le dans un article de blog ou un site simplement en ajoutant la ligne ci-dessous à votre page web.
+Rien de plus simple ! **Intégrez-le en iframe** dans un article de blog ou un site simplement en ajoutant la ligne ci-dessous à votre page web.
 
 `<script id="nosgestesclimat" src="https://nosgestesclimat.fr/iframe.js"></script>`
 
-Rejoignez ainsi [les nombreux réutilisateurs actuels](https://datagir.ademe.fr/apps/nos-gestes-climat/).
+Rejoignez ainsi les nombreux réutilisateurs actuels de notre calculateur d’empreinte carbone.
 
-Le module restera automatiquement à jour avec les [dernières évolutions](/nouveautés).
+Le module restera automatiquement à jour avec les [dernières évolutions](https://nosgestesclimat.fr/nouveaut%C3%A9s).
+Pour en savoir plus sur l'intégration, rendez-vous sur [notre guide](https://github.com/datagir/nosgestesclimat-site/blob/master/PERSONNALISATION.md).
 
-Pour en savoir plus sur l'intégration, rendez-vous sur [notre guide](https://github.com/datagir/nosgestesclimat-site/blob/master/PERSONNALISATION.md).
+### Vous souhaitez mobiliser votre entourage, les citoyens de votre collectivité, entreprise ou université ?
 
-## Vous animez des conférences climat
+Nos Gestes Climat a été pensé pour être un outil de mobilisation, et nous sommes ravis de pouvoir compter sur vous pour nous aider à amplifier cette dynamique à travers des campagnes dédiées.
 
-Pour pimenter une conférence et rendre vos auditeurs actifs sur leur téléphone, quoi de mieux que de les laisser faire une simulation en direct ?
+Notre **kit de diffusion** peut vous permettre de **personnaliser votre campagne** pour mobiliser votre entourage à réaliser son bilan carbone.
 
-Vous voulez estimer l'empreinte climat d'un groupe de personnes, ou simplement intégrer le simulateur et récupérer le résultat de simulation dans le compte de l'utilisateur ?
+Pour rendre la votre campagne de mobilisation plus ludique, utilisez la **fonctionnalité “sondage”**, qui vous permet d’obtenir la moyenne de l’empreinte carbone de l’ensemble des répondants, globale et par catégorie d’émissions.
 
-Les fonctionnaliés "conférence" et "sondage" sont désormais disponibles !
+**Rendez-vous sur le [🏟️ mode groupe](https://nosgestesclimat.fr/groupe)**, choisissez un nom de salle, partagez le lien ou le QR code, et lancez le défi !
 
-Rendez-vous [🏟️ mode groupe](/groupe) sur choissiez un nom de salle, partagez le lien, et lancez le match de simulation !
+Pour tout besoin d’accompagnement ou de co-construction de votre campagne, écrivez-nous : contact@nosgestesclimat.fr.
 
-<h2 lang="en"> <span role="img" aria-label="" aria-hidden="true">🇬🇧</span> You want the same calculator tailored to your country </h2>
+### Vous animez des conférences climat ?
 
-<p lang="en">We are looking for native partners to translate and adapt the GHG emissions model for the specificities of other countries.</p>
+Découvrez notre **guide de l’animateur** pour l’organiser de manière autonome ou contactez l’Agence pour la transition Bas Carbone pour l’animer : teddy.courtaux@abc-transitionbascarbone.fr.
 
-> Nous recherchons activement des partenaires étrangers pour décliner Nos Gestes Climat dans d'autres pays.
+### Vous voulez parler de Nos Gestes Climat dans votre média ?
 
-## Vous souhaitez personnaliser l'outil pour vos propres besoins
+Nous vous en remercions vivement, les médias sont la première source de diffusion de notre simulateur d’empreinte carbone !
 
-Pour en savoir plus sur l'intégration personnalisée (<span lang="en">iframe</span> configuré, fork du code), rendez-vous sur [notre guide de personnalisation](https://github.com/datagir/nosgestesclimat-site/blob/master/PERSONNALISATION.md).
+**Contactez notre chargée de déploiement** pour tout besoin d’informations, de témoignages ou de co-écriture : contact@nosgestesclimat.fr
 
-## Vous voulez simplement nous aider
+### Vous souhaitez personnaliser l'outil pour vos propres besoins ?
 
-Les contributions sont libres. Nous recherchons notamment :
+Pour en savoir plus sur l'intégration personnalisée de notre calculateur d’empreinte carbone (iframe configuré, fork du code), rendez-vous sur notre **[guide de personnalisation](https://github.com/incubateur-ademe/nosgestesclimat-site/blob/master/PERSONNALISATION.md)**.
 
--   des personnes qui aiment jongler avec les unités physiques et modéliser des calculs en trouvant les meilleures sources de données disponibles
--   des développeurs et designers pour améliorer le site, son design et ses fonctionnalités
+### Vous souhaitez adapter le simulateur à un nouveau territoire ?
 
-Tout est sur [Github](https://github.com/datagir/?q=nosgestesclimat&type=&language=&sort=), mais n'hésitez pas à nous contacter directement.
+L'internationalisation de Nos Gestes Climat est complexe : il n'est pas seulement question de simple traduction linguistique mais de la mise en place d'une solution permettant d'adapter la langue et le modèle de calcul en fonction du pays.
 
-## Nous contacter
+Retrouvez plus d’informations **[ici](https://github.com/incubateur-ademe/nosgestesclimat/blob/master/INTERNATIONAL.md)**.
+
+N'hésitez pas à contribuer et surtout à nous contacter si besoin à l'adresse [contact@nosgestesclimat.fr](mailto:contact@nosgestesclimat.fr) ou directement dans une issue Github.
+
+### Vous voulez simplement nous aider ?
+
+Toutes les contributions sont bienvenues ! Nous recherchons plus particulièrement :
+
+-   des **contributeurs** qui souhaitent nous partager des suggestions et pistes d’amélioration sur le site, l’outil et son modèle
+
+Tout est sur [Github](https://github.com/incubateur-ademe/nosgestesclimat/blob/master/CONTRIBUTING.md), mais n'hésitez pas à nous contacter directement.
+
+-   des **ambassadeurs** qui déploient Nos Gestes Climat au plus près des citoyens pour réaliser leur bilan carbone
+
+Pour rappel, notre kit de diffusion de notre simulateur d’empreinte carbone et l’adresse à laquelle nous écrire pour tout besoin d’accompagnement ou question : contact@nosgestesclimat.fr.
+
+### Nous contacter
 
 contact@nosgestesclimat.fr
