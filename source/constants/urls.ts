@@ -6,7 +6,7 @@ export const NETLIFY_FUNCTIONS_URL =
 export const secure = process.env.NODE_ENV === 'development' ? '' : 's'
 const protocol = `http${secure}://`
 
-export const SERVER_URL = protocol + process.env.SERVER_URL
+export const SERVER_URL = protocol + 'server.nosgestesclimat.fr'
 
 export const SURVEYS_URL = SERVER_URL + '/surveys/'
 
