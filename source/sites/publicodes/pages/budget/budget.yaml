@@ -37,10 +37,24 @@
   description: |
     En 2023, Nos Gestes Climat est un service pérennisé, porté par l'Accélérateur de la transition écologique au sein de l'ADEME.
     L’amélioration continue et le déploiement du simulateur existant se poursuivent.
-    A mi-année, 9 personnes travaillent pour Nos Gestes Climat (tout ou partie de leur temps). Le budget présenté est le budget prévisionnel jusqu'à fin 2023.
+    En fin d'année, 9 personnes travaillent pour Nos Gestes Climat (tout ou partie de leur temps).
   total:
     Développement: 430023
-    Déploiement: 75998
-    Produit: 114740
-    Design: 84933
+    Déploiement: 102804
+    Produit: 126827
+    Modèle: 110945
+    Design: 80531
     Coaching: 27648
+
+2024:
+  description: |
+    En 2024, Nos Gestes Climat est un service pérennisé, porté par l'Accélérateur de la transition écologique au sein de l'ADEME.
+    L’amélioration continue et le déploiement du simulateur existant se poursuivent.
+    A fin octobre d'année, 9 personnes travaillent pour Nos Gestes Climat (tout ou partie de leur temps). Le budget présenté est partiel (janvier - octobre).
+  total:
+    Développement: 299644
+    Déploiement: 244954
+    Produit: 100001
+    Modèle: 111423
+    Design: 67566
+    Coaching: 5760
